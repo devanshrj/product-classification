@@ -8,7 +8,7 @@ My attempt at Task 3 (NLP) for MIDAS@IIITD Summer Internship 2021 program. The g
 - Further, the dataset is very unbalanced.
   - Approximately 30% of the products belong to the 'Clothing' category and so on.
   - Thus, I have only focused on the top 15 categories in decreasing order of their product counts.
-  - Adding more categories will lead to a decrease in accuracy due to the lack of training examples for such categoresi.
+  - Adding more categories will lead to a decrease in accuracy due to the lack of training examples for such categories.
   - On the other hand, if we consider only top 5 or top 10 categories, we can improve the accuracy.
 
 ### Description
@@ -34,6 +34,7 @@ My attempt at Task 3 (NLP) for MIDAS@IIITD Summer Internship 2021 program. The g
 - The reported metrics correspond to the test set.
 - Metrics used:
   - Mean accuracy and Weighted F1
+  - The metrics can be improved upon.
 
 ### Naive Bayes Classifier
 - The accuracy metric considered is **mean accuracy**. 
@@ -55,7 +56,7 @@ My attempt at Task 3 (NLP) for MIDAS@IIITD Summer Internship 2021 program. The g
 
 ### BERT Classifier
 - I have fine-tuned `bert-base-uncased` model obtained from `transformers` library along with the corresponding tokenizer.
-- The accuracy metric considered is **Weighted F1**. 
+- The accuracy metric considered is **weighted F1**. 
 - The model was trained for just one epoch on Google Colab.
   - Weighted F1: 93.2%
   - Mean Accuracy: 93.8%

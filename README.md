@@ -60,8 +60,8 @@ My attempt at Task 3 (NLP) for MIDAS@IIITD Summer Internship 2021 program. The g
 - I have fine-tuned `bert-base-uncased` model obtained from `transformers` library along with the corresponding tokenizer.
 - The model was trained for just one epoch on Google Colab.
 - Results:
-  - Mean Accuracy: 93.8%
-  - Weighted F1: 93.2%
+  - Mean Accuracy: 94.058%
+  - Weighted F1: 93.660%
 - To increase the accuracy further:
   - Train for more epochs.
 

@@ -1,5 +1,5 @@
-# MIDAS@IIITD Summer Internship 2021
-My attempt at Task 3 (NLP) for MIDAS@IIITD Summer Internship 2021 program. The goal of the task is to predict the primary category of a product using primarily the description of the product.
+# Product Classification
+The goal of the task is to predict the primary category of a product using the description of the product. The dataset used for the task is based on [Flipkart Products](https://www.kaggle.com/PromptCloudHQ/flipkart-products).
 
 ## Data Preparation
 ### Labels
@@ -12,12 +12,11 @@ My attempt at Task 3 (NLP) for MIDAS@IIITD Summer Internship 2021 program. The g
   - On the other hand, if we consider only top 5 or top 10 categories, we can improve the accuracy.
 
 ### Description
-- The description has been preprocessed as follows:
+- The description has been processed as follows:
   - Remove any non-alphabetic characters and extra whitespaces.
   - Convert the strings to lowercase.
-  - Remove stopwords from the strings.
-    - I have used stopwords from the `spaCy` library for this.
-- `preprocessed.csv` obtained after the preprocessing is used for the `LSTM` and `BERT` models. It contains only two attributes, `primary_category` and `description`.
+  - Remove stopwords from the strings using stopwords obtained from the `spaCy` library.
+- `preprocessed.csv` is obtained after the preprocessing and is used for the `LSTM` and `BERT` models. It contains only two attributes, `primary_category` and `description`.
 
 ### Insights and Visualisations
 - I have mainly focused on two visualisations:
